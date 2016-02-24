@@ -44,6 +44,48 @@ end
 
 puts select([12, 11, 13, 14, 16, 20], 15)
 
+
+puts "Start of the any? proc code"
+puts "------------------"
+
+
+def p_any?(compare_value, comparator)
+  result = false
+  case comparator
+  when :>
+    return Proc.new do |array|
+      array.each { |element| result = true if element > compare_value }
+      result
+    end
+  when :<
+    return Proc.new do |array|
+      array.each { |element| result = true if element < compare_value }
+      result
+    end
+  when :==
+    return Proc.new do |array|
+      array.each { |element| result = true if element == compare_value}
+      result
+    end
+  end
+end
+
+any_less_than18 = p_any?(18, :<)
+
+x = [25, 30, 22, 19, 55, 83]
+puts "\n\nany less than 18 for array #{x} returns #{any_less_than18.call(x)}\n\n"
+
+x = [10, 34, 22, 73, 84]
+puts "any less than 18 for array #{x} returns #{any_less_than18.call(x)}\n\n"
+
+x = [10, 3, 5, 7, 17]
+puts "any less than 18 for array #{x} returns #{any_less_than18.call(x)}\n\n"
+
+
+
+
+
+
 # Enums.select(ages, condition)
 
 # def add(num)
