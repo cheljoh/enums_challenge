@@ -6,8 +6,12 @@
 The p_any? method takes 2 parameters, a numeric value X and one of three
 symbols, and returns a proc for comparing all values in an array to X.
 
-The available symbols are :>, :<, and :==. They allow the user to select
-'greater than', 'less than' and 'equals' respectively.
+The available symbols are:  
+* :>  
+* :<  
+* :==  
+
+They allow the user to select 'greater than', 'less than' and 'equals'
 
 Example:
 
