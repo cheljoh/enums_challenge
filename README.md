@@ -1,4 +1,4 @@
-## Using the 'p_any?' Method
+### Using the 'p_any?' Method
 ----------------------------
 
   p_any?(X, symbol)
