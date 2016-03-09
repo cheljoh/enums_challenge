@@ -13,11 +13,11 @@ Example:
 
   any_less_than_3? = p_any?(3, :<)
 
-  a = [4, 5, 6]
+  a = [4, 5, 6]  
   any_less_than_3?.call(a)  
   => false
 
-  b = [1, 7, 8]
+  b = [1, 7, 8]  
   any_less_than_3?.call(b)  
   => true
 
