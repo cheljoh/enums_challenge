@@ -38,7 +38,7 @@ created. To do a different comparison you must create a different proc.
 
 
 
-Copyright (c) <2016> Christopher Soden, Chelsea Johnson, Aaron Careaga, et al
+Copyright (c) 2016 Christopher Soden, Chelsea Johnson, Aaron Careaga, et al
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
