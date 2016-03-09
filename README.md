@@ -15,8 +15,8 @@ They allow the user to select 'greater than', 'less than' and 'equals'
 
 Example:
 
-any_less_than_3? = p_any?(3, :<)
-
+    any_less_than_3? = p_any?(3, :<)
+    
     a = [4, 5, 6]  
     any_less_than_3?.call(a)  
     => false
