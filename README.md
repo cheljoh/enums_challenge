@@ -15,15 +15,15 @@ They allow the user to select 'greater than', 'less than' and 'equals'
 
 Example:
 
-  any_less_than_3? = p_any?(3, :<)
+any_less_than_3? = p_any?(3, :<)
 
-  a = [4, 5, 6]  
-  any_less_than_3?.call(a)  
-  => false
-
-  b = [1, 7, 8]  
-  any_less_than_3?.call(b)  
-  => true
+    a = [4, 5, 6]  
+    any_less_than_3?.call(a)  
+    => false
+    
+    b = [1, 7, 8]  
+    any_less_than_3?.call(b)  
+    => true
 
 
 The proc returned by p_any? is activated with the '.call' method. It will check
