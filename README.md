@@ -3,10 +3,10 @@
 
   p_any?(X, symbol)
 
-The p_any? method takes 2 parameters, a numeric value 'X' and one of three
-symbols, and returns a proc for comparing all values in an array to 'X'.
+The p_any? method takes 2 parameters, a numeric value X and one of three
+symbols, and returns a proc for comparing all values in an array to X.
 
-The available symbols are ':>,' ':<,' and ':=='. They allow the user to select
+The available symbols are :>, :<, and :==. They allow the user to select
 'greater than', 'less than' and 'equals' respectively.
 
 Example:
@@ -30,15 +30,6 @@ than or equal to the set value X).
 
 Remember that the conditions for comparison are set at the time the proc is
 created. To do a different comparison you must create a different proc.
-
-
-
-
-
-
-
-
-
 
 
 
