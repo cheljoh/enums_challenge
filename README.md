@@ -1,9 +1,9 @@
-### Using the 'p_any?' Method
+### Using the `p_any?` Method
 ----------------------------
 
   p_any?(X, symbol)
 
-The p_any? method takes 2 parameters, a numeric value X and one of three
+The `p_any?` method takes 2 parameters: a numeric value X and one of three
 symbols, and returns a proc for comparing all values in an array to X.
 
 The available symbols are:  
@@ -26,10 +26,10 @@ Example:
     => true
 
 
-The proc returned by p_any? is activated with the '.call' method. It will check
-every element of an array against the set value and return true if one, some or
+The proc returned by `p_any?` is activated with the `.call` method. It will check
+every element of an array against the pre-set value and return true if one, some or
 all of the elements in the array match the set conditions (greater than, less
-than or equal to the set value X).
+than or equal to the value X).
 
 
 Remember that the conditions for comparison are set at the time the proc is
