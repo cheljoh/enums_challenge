@@ -1,7 +1,7 @@
 ### Using the `p_any?` Method
 ----------------------------
 
-  p_any?(X, symbol)
+    p_any?(X, symbol)
 
 The `p_any?` method takes 2 parameters: a numeric value X and one of three
 symbols, and returns a proc for comparing all values in an array to X.
